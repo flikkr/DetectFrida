@@ -9,16 +9,16 @@ set(can_use_assembler TRUE)
 enable_language(ASM)
 
 #Start - Comment this block for generating non-obfuscated builds
-set(OLLVM_PATH ${CMAKE_HOME_DIRECTORY}/../../../../../o-llvm-binary/ollvm-tll/build/bin_Darwin)
-set(OLLVM_C_COMPILER ${OLLVM_PATH}/clang)
-set(OLLVM_CXX_COMPILER ${OLLVM_PATH}/clang++)
-
-set(OLLVM_C_FLAGS "-mllvm -sub -mllvm -bcf -mllvm -fla")
-
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OLLVM_C_FLAGS}")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OLLVM_C_FLAGS}")
-set(CMAKE_C_COMPILER ${OLLVM_C_COMPILER})
-set(CMAKE_CXX_COMPILER ${OLLVM_CXX_COMPILER})
+#set(OLLVM_PATH ${CMAKE_HOME_DIRECTORY}/../../../../../o-llvm-binary/ollvm-tll/build/bin_Darwin)
+#set(OLLVM_C_COMPILER ${OLLVM_PATH}/clang)
+#set(OLLVM_CXX_COMPILER ${OLLVM_PATH}/clang++)
+#
+#set(OLLVM_C_FLAGS "-mllvm -sub -mllvm -bcf -mllvm -fla")
+#
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OLLVM_C_FLAGS}")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OLLVM_C_FLAGS}")
+#set(CMAKE_C_COMPILER ${OLLVM_C_COMPILER})
+#set(CMAKE_CXX_COMPILER ${OLLVM_CXX_COMPILER})
 #End - Comment this block for generating non-obfuscated builds
 
 #Set flags to detect arm32 bit or arm64 bit for switching between elf structures
